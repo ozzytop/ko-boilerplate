@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script type='text/javascript' src='js/knockout-3.5.1.js'></script>
+    
+</head>
+<body>
+
+    <div id="app">
+        The name is <span data-bind="text: personName"></span> and has <span data-bind="text: personAge"></span> years old.
+        
+        <div>
+            You've clicked <span data-bind="text: numberOfClicks"></span> times
+            <button data-bind="click: incrementClickCounter">Click me</button>
+        </div>
+        
+    </div>
+
+</body>
+
+<script src='js/main.js'></script>
+</html>
